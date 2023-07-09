@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <td>Amount</td>
+                <td>From Currency</td>
+                <td>To Currency</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="text" id="tien" />
+                </td>
+                <td>
+                    <select name="currency" id="loaitien" onchange="tien1()">
+                        <option value="VND">VND</option>
+                        <option value="USD">USD</option>
+                    </select>
+                </td>
+                <td>
+                    <select name="TOcurrency" id="TOloaitien" onchange="tien2()">
+                        <option value="USD">USD</option>
+                        <option value="VND">VND</option>
+                    </select>
+                </td>
+                <td>
+                    <button onclick="chuyentien()">Convert</button>
+                </td>
+            </tr>
+                <td> <p id="ketqua"></p>
+                </td>
+            </tr>
+        </table>
+        <script>
+            function tien1(){
+                var y = document.getElementById('loaitien').value;
+                 console.log(y);
+            }
+            function tien2(){
+                var z = document.getElementById('TOloaitien').value;
+                console.log(z); 
+            }
+             function chuyentien() {
+             var x = +document.getElementById('tien').value;
+             var y = document.getElementById('loaitien').value;
+             var z = document.getElementById('TOloaitien').value;
+             var result;
+                
+             if (y == ' VND'&& z == 'USD') {
+                 result== x/23000}
+            else if (y == 'USD'&& z == 'VND') {
+                  result== x/23000}
+            else if (y == ' USD') {
+                 result == x}
+                 else {
+                result == x}
+                 }
+                 console.log(result)
+        </script>
+    </body>
+</html>

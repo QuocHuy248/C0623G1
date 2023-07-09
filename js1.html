@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <button type="button" onclick="showmessage();" id="clickbutton">Click</button>
+        <script>
+            function showmessage() {
+                alert('Xin chào!');
+                document.write('Xin chào');
+                document.getElementById('clickbutton').innerHTMl = 'Xin chào';
+            }
+        </script>
+    </body>
+</html>

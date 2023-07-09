@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Điểm lý</p>
+        <input type="text" name="diemly" id="diemvatly" />
+        <br />
+        <p>Điểm hóa</p>
+        <input type="text" name="diemhoa" id="diemhoahoc" />
+        <br />
+        <p>Điểm sinh:</p>
+        <input type="text" name="diemsinh" id="diemsinhhoc" />
+        <input type="text" id="tong" /><button onclick="tinhtong()">Điểm tổng</button>
+        <input type="text" id="diemtb" /><button onclick="tinhdiemtb()">Điểm trung binh</button>
+
+        <script>
+            function tinhtong() {
+                var x = +document.getElementById('diemvatly').value;
+                var y = +document.getElementById('diemhoahoc').value;
+                var z = +document.getElementById('diemsinhhoc').value;
+                console.log(x);
+                console.log(y);
+                console.log(z);
+                var q = x + y + z;
+                var p = q / 3;
+                document.getElementById('tong').value = q;
+            }
+            function tinhdiemtb() {
+                var x = +document.getElementById('diemvatly').value;
+                var y = +document.getElementById('diemhoahoc').value;
+                var z = +document.getElementById('diemsinhhoc').value;
+                console.log(x);
+                console.log(y);
+                console.log(z);
+                var q = x + y + z;
+                var p = q / 3;
+                document.getElementById('diemtb').value = p;
+            }
+        </script>
+    </body>
+</html>

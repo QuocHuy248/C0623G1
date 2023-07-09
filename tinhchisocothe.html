@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <p>Chiều cao:</p>
+        <input type="text" id="height" /><br />
+        <p>Cân nặng:</p>
+        <input type="text" id="weight" /><br />
+        <button id="chiso" onclick="tinhchiso()">Kết quả</button>
+        <p id="ketqua"></p>
+        <script>
+            function tinhchiso() {
+                var a = +document.getElementById('height').value;
+                var b = +document.getElementById('weight').value;
+                var c = b / (a ^ 2);
+                if (c >= 30) {
+                    document.getElementById('ketqua').innerHTML = 'Obese';
+                } else {
+                    if (c >= 25) {
+                        document.getElementById('ketqua').innerHTML = 'over weight';
+                    } else {
+                        if (c >= 18.5) {
+                            document.getElementById('ketqua').innerHTML = 'normal';
+                        } else {
+                            document.getElementById('ketqua').innerHTML = 'under weight';
+                        }
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

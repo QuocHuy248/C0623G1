@@ -583,29 +583,29 @@
 
 // bài 17.1
 
-// function check(Array) {
-//     let odd = '';
+function check(Array) {
+    let odd = '';
 
-//     for (let i = 0; i < Array.length; i++) {
-//         let count = 0;
-//         for (let j = 0; j < Array[i].length; j++) {
-//             if (Array[i][j] > Array[i][j + 1]) {
-//                 count++;
-//                 if (count == Array[i].length - 1) {
-//                     odd += ' ' + i;
-//                 }
-//             }
-//         }
-//     }
-//     return odd;
-// }
-// let arr = [
-//     [1, 2, 3, 4],
-//     [1, 2, 5, 4],
-//     [1, 2, 6, 4],
-//     [8, 7, 6, 4],
-// ];
-// console.log(check(arr));
+    for (let i = 0; i < Array.length; i++) {
+        let count = 0;
+        for (let j = 0; j < Array[i].length; j++) {
+            if (Array[i][j] > Array[i][j + 1]) {
+                count++;
+                if (count == Array[i].length - 1) {
+                    odd += ' ' + i;
+                }
+            }
+        }
+    }
+    return odd;
+}
+let arr = [
+    [1, 2, 3, 4],
+    [1, 2, 5, 4],
+    [8, 7, 6, 4],
+    [8, 7, 6, 4],
+];
+console.log(check(arr));
 
 //bài 18.1
 // function check(Array) {

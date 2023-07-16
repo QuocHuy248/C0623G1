@@ -58,8 +58,15 @@
             //     }
             // }
 
-
-            
+            var a = prompt('Chuỗi a');
+            var b = a.match(/./g);
+            console.log(b);
+            for (let i = 0; i < b.length; i++) {
+                if (b[i] == '-') {
+                    b.splice(1, 1, '_');
+                }
+                console.log(b);
+            }
         </script>
     </body>
 </html>

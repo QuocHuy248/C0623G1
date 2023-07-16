@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // function drawLeftTriangle(n) {
+            //     let result = '';
+            //     for (let i = 1; i <= n; i++) {
+            //         for (let j = 1; j <= i; j++) {
+            //             result += '*';
+            //         }
+            //         result += '\n';
+            //     }
+            //     console.log(result);
+            // }
+
+            // drawLeftTriangle(5); // In ra tam giác vuông bên trái với độ dài cạnh là 5
+            // function drawrightTriangle(n) {
+            //     let result = '';
+            //     for (let i = 1; i <= n; i++) {
+            //         for (let z = 1; z <= n - i; z++) {
+            //             result += ' ';
+            //         }
+            //         for (let j = 1; j <= i; j++) {
+            //             result += '*';
+            //         }
+            //         result += '\n';
+            //     }
+            //     console.log(result);
+            // }
+
+            // drawrightTriangle(5); in ra tam giác vuông bên phải với độ dài cạnh là 5
+            // function drawtopleftTriangle(n) {
+            //     let result = '';
+            //     for (let i = 1; i <= n; i++) {
+            //         for (let j = 5; j > i - 1; j--) {
+            //             result += '*';
+            //         }
+
+            //         result += '\n';
+            //     }
+            //     console.log(result);
+            // }
+            // drawtopleftTriangle(5);in ra tam giác vuông ở trên bên trái với độ dài là 5
+            // function drawtoprightTriangle(n) {
+            //     let result = '';
+            //     for (let i = 1; i <= n; i++) {
+            //         for (let z = 1; z <= i - 1; z++) {
+            //             result += ' ';
+            //         }
+            //         for (let j = 5; j > i - 1; j--) {
+            //             result += '*';
+            //         }
+            //         result += '\n';
+            //     }
+            //     console.log(result);
+            // }
+            // drawtoprightTriangle(5); in ra tam giác vuông ở trên bên phải với độ dài là 5
+            function drawoval(n) {
+                let result = '';
+                for (let i = 1; i <= n - 8; i++) {
+                    if (i == 1 || i == n - 8) {
+                        for (let j = 1; j <= n; j++) {
+                            result += '*';
+                        }
+                    } else {
+                        for (let z = 1; z <= n; z++) {
+                            if (z == 1 || z == n) {
+                                result += '*';
+                            } else {
+                                result += ' ';
+                            }
+                        }
+                    }
+                    result += '\n';
+                }
+                console.log(result);
+            }
+
+            drawoval(15);
+            // drawoval(7); in ra hình chữ nhập với chiều dài là 15 và chiều rộng là 7
+        </script>
+    </body>
+</html>

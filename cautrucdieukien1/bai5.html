@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            var a = +prompt('diem kiem tra');
+            var b = +prompt('diem giua ky');
+            var c = +prompt('diem cuoi ky');
+            var average = (a * 2 + b * 3 + c * 3) / 8;
+            if (average >= 8) {
+                alert('hoc sinh gioi');
+            } else {
+                if (average >= 6.5) {
+                    alert('học sinh khá');
+                } else {
+                    if (average >= 5) {
+                        alert('học sinh trung bình');
+                    } else {
+                        alert('học sin yêu');
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

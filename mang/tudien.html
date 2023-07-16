@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>Từ Điển</h1>
+        <input type="text" id="tutienganh" /><button id="dich" onclick="dichtienganh()">Dịch</button>
+        <hr />
+        <p id="nghia"></p>
+        <script>
+            var a = ['Táo', 'Chuối'];
+            var b = ['Apple', 'Banana'];
+
+            function dichtienganh() {
+                var d = document.getElementById('tutienganh').value;
+                for (let i = 0; i < a.length; i++) {
+                    if (d == b[i]) {
+                        document.getElementById('nghia').innerHTML = a[i];
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

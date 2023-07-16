@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <h1>type anything slowly</h1>
+        <textarea name="" id="otrong" cols="30" rows="10" onkeydown="nhannut()"></textarea>
+        <script>
+            var a = ['x', 'i', 'n', ' ', 'c', 'h', 'à', 'o'];
+            n = '';
+
+            function nhannut() {
+                b = document.getElementById('otrong').value = a;
+
+                c = b.length;
+                console.log(c);
+                if (c > 0) {
+                    for (let i = 0; i < c; i++) {
+                        n += a[i];
+                        if (i == 7) {
+                            n = '';
+                        }
+                    }
+                    b = n;
+                }
+            }
+            //     if
+            //     for (let i = 0; i < a.length; i++) {
+            //         n += a[i];
+            //     }
+            //     document.getElementById('otrong').value = n;
+            // }
+            //     let b = document.getElementById('otrong').value;
+            //     j = b.length;
+            //     if (j > 0) {
+            //         for (let i = 0; i < j; i++) {
+            //             n = n + a[i];
+            //             if (i == 7) {
+            //                 b = '';
+            //                 n = '';
+            //             }
+            //         }
+            //     }
+            //     document.getElementById('otrong').value = n;
+            // }
+        </script>
+    </body>
+</html>

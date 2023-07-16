@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // var number = 20;
+            // var N = 2;
+            // let count = 0;
+            // i = 2;
+            // while (count <= number) {
+            //     for (let i = 2; i < N; i++) {
+            //         if (N % i!= 0) {
+            //             break;
+            //         } else {
+            //             console.log(N);
+            //             count++;
+            //         }
+            //     }
+            //     N++;
+            // }
+
+            let count = 0;
+            let numTemp = 2;
+            while (count <= 10) {
+                let flag = true;
+                for (let i = 2; i < numTemp; i++) {
+                    if (numTemp % i == 0) {
+                        flag = false;
+                        break;
+                    }
+                }
+                if (flag == true) {
+                    console.log(numTemp + ' Là số nguyên tố');
+                    count++;
+                }
+                numTemp++;
+            }
+        </script>
+    </body>
+</html>

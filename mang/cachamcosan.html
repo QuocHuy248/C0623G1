@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // var mycolor = ['red', 'green', 'white', 'black'];
+            // let str = '';
+            // for (let i = 0; i < mycolor.length; i++) {
+            //     str += mycolor[i] + ',';
+            // }
+            // console.log(str); bai 1
+
+            // var a = +prompt('Nhan 1 so ');
+            // var b = a.toString();
+            // var c = [b[0]];
+
+            // for (let i = 0; i < b.length; i++) {
+            //     if (b[i - 1] % 2 === 0 && b[i] % 2 === 0) {
+            //         c.push('-', b[i]);
+            //     } else {
+            //         c.push(b[i]);
+            //     }
+            // }
+            // console.log(c.join(''));bai2
+
+            var a = prompt('Nhap vao 1 chuoi');
+            const UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+            const LOWER = 'abcdefghijklmnopqrstuvwxyz';
+            const result = [];
+
+            for (let i = 0; i < a.length; i++) {
+                if (UPPER.includes(a[i])) {
+                    result.push(a[i].toLowerCase());
+                } else if (LOWER.includes(a[i])) {
+                    result.push(a[i].toUpperCase());
+                } else {
+                    result.push(a[i]);
+                }
+            }
+            console.log(result.join(''));
+        </script>
+    </body>
+</html>
